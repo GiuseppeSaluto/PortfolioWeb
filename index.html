@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5238d80bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images_port/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web/Software Developer</p>
+            <h1>Hi, I'm <span>Giuseppe</span><br>From Modena</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images_port/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Sono un Web Developer con competenze di sviluppo in ambito back-end e front-end. Buone capacità organizzative e di time management. Ottime capacità comunicative e formative. Passione per la tecnologia e per il mondo del Gaming. Motivato alla formazione continua in ambito digitale e ad accrescere le proprie competenze. Sono una persona molto alla mano e pratica. Dopo anni di lavori ordinari mi sono finalmente deciso a fare il grande salto e mettere in pratica le mie conoscenze in ambito digitale. Tra i vari linguaggi di sviluppo mi definisco un amante di Python e mi affascinano tutte le possibilità di sviluppo delle AI nel prossimo/breve futuro.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>FrontEnd</span><br>HTML | CSS | Javascript | Bootstrap</li>
+                        <li><span>BackEnd</span><br>PHP | Python | Laravel | Flask | MySQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 [14/06 - 25/07]</span><br>Corso Software Developer per l'industria</li>
+                        <li><span>2023 [20/02 - 18/05]</span><br>Coding Bootcamp Aulab Junior Full-Stack Developer</li>
+                        <li><span>2021 - 2023</span><br>Addetto Operazioni Magazzino Conad</li>
+                        <li><span>2020 - 2021</span><br>Ristorazione in SteakHouse Ita/UK</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2007 - 2012</span><br>Diploma Decorazione Pittorica - Liceo Artistico Michelangelo Buonarroti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Ho una conoscenza ad ampio spettro delle principali tecnologie di sviluppo web e dei linguaggi più utilizzati, sia lato frontend che backend. Unisco una metodologia pratica e orientata al risultato senza trascurare standard estetici. Prediligo stili "puliti/minimal" e sono un amante dello stile "Sci-fi" e del sottogenere "Cyberpunk".</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-sitemap"></i></i>
+                <h2>AI Enthusiast</h2>
+                <p>Adoro sperimentare con tutto quello che l'intelligenza artificiale ha da offrire, non per nulla Python è il mio linguaggio di riferimento! Mi documento quotidianamente e cerco di rimanere sempre aggiornato: dal Machine al Deep Learning al Data Analysis per non perdere opportunità di sviluppo legate al tema. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Software Developer</h2>
+                <p>Ho affrontato un percorso mirato nello sviluppo di applicativi e software e faccio apprendimento continuo nella creazione di varie tipologie; in base all'esigenza troviamo: programmi di gestione, sicurezza informatica, automazione industriale, identità digitale, software per l’e-commerce, per l'aggregazione, per visualizzazione e l’analisi dei Big Data, ecc. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images_port/work-1.png">
+                <div class="layer">
+                    <h3>API meteo Python</h3>
+                    <p>A program that collects meteorological data of a locality and produce forecast details.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images_port/work-2.png">
+                <div class="layer">
+                    <h3>Image edited AI</h3>
+                    <p>An algorithm to change styles and backgrounds with downloaded images.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images_port/work-3.png">
+                <div class="layer">
+                    <h3>Web Scraping Python</h3>
+                    <p>Code to extract data and information from the web.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> g.saluto15@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> "010010000110100100100001"</p>
+                <div class="social-icons">
+                    <a href="https://github.com/GiuseppeSaluto"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/giuseppe_saluto/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/giuseppe-saluto/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images_port/CV_GiuseppeSaluto.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Giuseppe. Made with <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script><script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
